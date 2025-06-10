@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12 (bumarket)" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>Angular</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>DOM 문제JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>Dev Container</id>
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+          <State>
+            <id>Dockerfile</id>
+          </State>
+          <State>
+            <id>DotEnv</id>
+          </State>
+          <State>
+            <id>ES2015 마이그레이션 지원JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>EditorConfig</id>
+          </State>
+          <State>
+            <id>Flow 타입 검사기JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>GitHub 액션</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JSON 및 JSON5</id>
+          </State>
+          <State>
+            <id>JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>MongoJS</id>
+          </State>
+          <State>
+            <id>MySQL</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>Oracle</id>
+          </State>
+          <State>
+            <id>PostgreSQL</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>ReactJavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>TypeScriptJavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>YAML</id>
+          </State>
+          <State>
+            <id>dbt</id>
+          </State>
+          <State>
+            <id>import 문 및 종속 요소JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>switch 문 이슈JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>try 문 문제JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>교정</id>
+          </State>
+          <State>
+            <id>국제화</id>
+          </State>
+          <State>
+            <id>대입 이슈JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>데이터 흐름JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>발생할 수 있는 버그JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>보안</id>
+          </State>
+          <State>
+            <id>비동기 코드 및 프로미스JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>비트 연산 이슈JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>사용하지 않는 심볼JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>유닛 테스트JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>유효성 이슈JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>이름 생성 규칙JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>일반</id>
+          </State>
+          <State>
+            <id>일반JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>잘못된 요소CSS</id>
+          </State>
+          <State>
+            <id>접근성HTML</id>
+          </State>
+          <State>
+            <id>정규식</id>
+          </State>
+          <State>
+            <id>제어 흐름 이슈JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>코드 구문이 바람직하지 않을 수 있습니다JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>코드 구문이 혼동될 수 있음JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>코드 스타일 이슈JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>코드 품질 도구JavaScript 및 TypeScript</id>
+          </State>
+          <State>
+            <id>함수 메트릭JavaScript 및 TypeScript</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+</project>
