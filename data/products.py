@@ -1,4 +1,3 @@
-
 from data import con, cur
 
 def add_product(user_id, title, description, image_url):
@@ -10,7 +9,6 @@ def add_product(user_id, title, description, image_url):
 
     print(product_id)
     return product_id
-
 
 def upload_image(product_id, image_url):
     query = f"INSERT INTO product_images (product_id, image_url) VALUES ('{product_id}', '{image_url}')"
@@ -45,13 +43,11 @@ def get_products_all():
     products = cur.fetchall()
     return products
 
-
 def get_product_by_id(product_id):
     query = f"SELECT product_id, title, description, image_url, created_at, COUNT(like_id) as like_count FROM products NATURAL LEFT JOIN likes WHERE product_id='{product_id}' GROUP BY  product_id, title, description, image_url, created_at"
     cur.execute(query)
     products = cur.fetchone()
     return products
-
 
 def get_is_liked(product_id, device_hash):
     query = f"SELECT COUNT(*) as is_liked FROM likes WHERE product_id='{product_id}' AND device_hash='{device_hash}'"

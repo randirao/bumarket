@@ -2,7 +2,6 @@ from fastapi import APIRouter, Body
 from starlette.requests import Request
 import service.admin as service
 
-
 SESSION_COOKIE_NAME = "session_id"
 admin = APIRouter(prefix='/admin')
 

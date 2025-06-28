@@ -9,10 +9,10 @@ cur: Optional[Cursor] = None
 
 def get_connection():
     return pymysql.connect(
-        host='127.0.0.1',
+        host='localhost',
         user='root',
         port=3306,
-        password='q1w2e3',
+        password='todos',
         database='bumaket',
         cursorclass=pymysql.cursors.DictCursor
     )

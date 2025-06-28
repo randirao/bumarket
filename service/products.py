@@ -1,10 +1,8 @@
 import os
 import shutil
-
 import cache.like as like_cache
 from service.users import getUserData
 from data import products as data
-
 
 def toggle_like(product_id:int, device_hash:str):
     like_cache.toggle_like(product_id, device_hash)
@@ -14,13 +12,11 @@ def toggle_like(product_id:int, device_hash:str):
         "like_count" : score,
     }
 
-
 def upload_image(image):
     name, ext= os.path.splitext(image.filename)
     from datetime import datetime
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
     save_name = f"{name}{timestamp}{ext}"
-
     image_path = os.path.join("uploads", save_name)
 
     with open(image_path, "wb") as f:
@@ -30,7 +26,6 @@ def upload_image(image):
 
 def add_product(access_token, title, description, images):
     user = getUserData(access_token)
-
     product_id = data.add_product(user['user_id'], title, description, upload_image(images[0]))
 
     for image in images[1:]:
@@ -39,7 +34,6 @@ def add_product(access_token, title, description, images):
 
 def get_products_by_userid(access_token):
     user = getUserData(access_token)
-
     products = data.get_products_by_userid(user['user_id'])
     return products
 
@@ -57,7 +51,6 @@ def delete_product(access_token, product_id):
 
 def get_products_all():
     return data.get_products_all()
-
 
 def get_product_by_id(product_id, device_hash):
     product = data.get_product_by_id(product_id)

@@ -1,4 +1,3 @@
-
 from data import con, cur
 
 def get_user_by_credentials(user):
@@ -15,7 +14,6 @@ def make_seller(seller):
     con.commit()
     return get_user_by_credentials(seller)
 
-
 def get_all_sellers():
     query = f"SELECT username, name FROM users WHERE is_admin = 0"
     cur.execute(query)
@@ -24,8 +22,7 @@ def get_all_sellers():
         return result
     return None
 
-
-def find_by_username(username):
+def get_one_sellers(username):
     query = f"SELECT * FROM users WHERE username = '{username}'"
     cur.execute(query)
     result = cur.fetchone()

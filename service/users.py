@@ -1,9 +1,7 @@
 from fastapi import HTTPException
-
 from data.users import get_user_by_credentials
 from service.jwt_util import create_access_token, decode_access_token
 from data import users as data
-
 
 def getAccessToken(user):
     user_data = get_user_by_credentials(user)
@@ -24,8 +22,7 @@ def getUserData(access_token):
 def token_to_user(token: str):
     payload = decode_access_token(token)
 
-    user = data.find_by_username(payload['username'])
-    user['password'] = None
+    user = data.get_one_sellers(payload['username'])
     if user is None:
         raise HTTPException(status_code=404, detail="User not found")
     return {key: value for key, value in user.items() if key != 'password'}

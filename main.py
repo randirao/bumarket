@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-
 from web.admin import admin
 from web.products import products
 from web.users import users

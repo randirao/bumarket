@@ -1,16 +1,19 @@
-from typing import List, Optional
-
+from typing import List
 from fastapi import APIRouter, UploadFile
-from fastapi.params import File, Form, Body
+from fastapi.params import File, Form
 from starlette.requests import Request
-
 from service import products as product_service
 
 SESSION_COOKIE_NAME = "session_id"
 seller = APIRouter(prefix="/seller")
 
 @seller.post('/products')
-def add_product(request: Request, images: List[UploadFile] = File(...), title = Form(), description = Form()):
+def add_product(
+        request: Request,
+        images: List[UploadFile] = File(..., description="Product images", alias="images"),
+    title: str = Form(..., alias="title"),
+    description: str = Form(..., alias="description")
+):
     access_token = request.cookies.get(SESSION_COOKIE_NAME)
     product_service.add_product(access_token, title, description, images)
     return {'message': 'Product added'}
@@ -31,4 +34,3 @@ def delete_product(request: Request, product_id: int):
     access_token = request.cookies.get(SESSION_COOKIE_NAME)
     product_service.delete_product(access_token, product_id)
     return {"message": "Product deleted"}
-
